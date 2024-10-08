@@ -25,7 +25,7 @@ public class HighScore : MonoBehaviour {
             _SCORE = value;
             PlayerPrefs.SetInt("HighScore", value);
             if(_UI_TEXT != null){
-                _UI_TEXT.text = "High Score" +value.ToString("#,0");
+                _UI_TEXT.text = "High Score " +value.ToString("#,0");
             }
         }
     }
