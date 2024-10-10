@@ -853,6 +853,7 @@ GameObject:
   - component: {fileID: 4816840970597577059}
   - component: {fileID: 3093206314127873954}
   - component: {fileID: -6979704137543235977}
+  - component: {fileID: -2802144942399999633}
   m_Layer: 0
   m_Name: Cookie
   m_TagString: Untagged
@@ -870,7 +871,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.0083226655, y: -0.3006943, z: 0.002624126, w: 0.9536807}
   m_LocalPosition: {x: 3.573939, y: 3.0051634, z: -1.0099437}
-  m_LocalScale: {x: 1, y: 1, z: 0.2}
+  m_LocalScale: {x: 2, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7472898014940393781}
@@ -981,3 +982,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2802144942399999633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479799322515697689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7b480f019d5354cb3a99c4479324ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
