@@ -1,38 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 using TMPro;
 
-public class ScoreDisplay : MonoBehaviour
-{
-   // public Text scoreText;
-
-    public TMP_Text scoreText;
-    public Bunny_Collision bunnyCollision;
+public class ScoreDisplay : MonoBehaviour{
+    public TMP_Text scoreText;  // TextMeshPro field to display score
+    public Bunny_Collision bunnyCollision;  // Reference to the Bunny_Collision script
 
     void Start()
     {
-        // Initialize the score display when the game starts
-        UpdateScoreDisplay();
+        if (bunnyCollision != null && scoreText != null)
+        {
+            // Initialize the score display when the game starts
+            UpdateScoreDisplay();
+        }
+        else
+        {
+            Debug.LogError("bunnyCollision or scoreText is not assigned in the Inspector.");
+        }
     }
 
     public void UpdateScoreDisplay()
     {
-        // Update the score text based on the current score
-        scoreText.text = "Score: " + bunnyCollision.score.ToString();
-//delete
+        // Ensure bunnyCollision and scoreText are not null before updating
         if (bunnyCollision != null && scoreText != null)
-    {
-        scoreText.text = "Score: " + bunnyCollision.score.ToString();
-        Debug.Log("Score updated: " + bunnyCollision.score); // Check if the score updates
+        {
+            scoreText.text = "Score: " + bunnyCollision.score.ToString();  // Update the score display
+            Debug.Log("Score updated: " + bunnyCollision.score);  // For debugging, to check if the score is updating
+        }
+        else
+        {
+            Debug.LogError("Cannot update score display: Either bunnyCollision or scoreText is null.");
+        }
     }
-    else
-    {
-        Debug.LogError("Cannot update score display: Either bunnyCollision or scoreText is null.");
-    } //delete
-    }
-
-    // Call this function whenever the score changes, instead of every frame
-
-// delete below if problem
-    
 }
