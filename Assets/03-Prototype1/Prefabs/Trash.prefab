@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 855432189726793596}
   - component: {fileID: 6355716847518487818}
   - component: {fileID: 1025236231077937711}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 1563095728815818638}
   - component: {fileID: 4007273690121539400}
   - component: {fileID: 937185597281888332}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 1531646087637420451}
   - component: {fileID: 5133029469951593188}
   - component: {fileID: 8920301717118122541}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
